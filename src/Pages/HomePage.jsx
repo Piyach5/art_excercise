@@ -20,10 +20,10 @@ function HomePage() {
     audio_2.play();
   };
 
-  const [answer1, setAnswer1] = useState("");
-  const [answer2, setAnswer2] = useState("");
-  const [answer3, setAnswer3] = useState("");
-  const [answer4, setAnswer4] = useState("");
+  const [answer1, setAnswer1] = useState("...");
+  const [answer2, setAnswer2] = useState("...");
+  const [answer3, setAnswer3] = useState("...");
+  const [answer4, setAnswer4] = useState("...");
   return (
     <>
       <header className="title">
