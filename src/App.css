@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+button {
+  margin: 5px;
+}
