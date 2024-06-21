@@ -9,6 +9,17 @@ import triangle_form from "../assets/3d/triangle_form.png";
 import { useState } from "react";
 
 function HomePage() {
+  let audio_1 = new Audio("/correct_choice.mp3");
+  let audio_2 = new Audio("/wrong_choice.mp3");
+
+  const correct_sound = () => {
+    audio_1.play();
+  };
+
+  const wrong_sound = () => {
+    audio_2.play();
+  };
+
   const [answer1, setAnswer1] = useState("");
   const [answer2, setAnswer2] = useState("");
   const [answer3, setAnswer3] = useState("");
@@ -21,6 +32,7 @@ function HomePage() {
       <div className="img-container">
         <button
           onClick={() => {
+            wrong_sound();
             setAnswer1("👎");
           }}
         >
@@ -28,6 +40,7 @@ function HomePage() {
         </button>
         <button
           onClick={() => {
+            correct_sound();
             setAnswer1("👍");
           }}
         >
@@ -38,6 +51,7 @@ function HomePage() {
       <div className="img-container">
         <button
           onClick={() => {
+            correct_sound();
             setAnswer2("👍");
           }}
         >
@@ -45,6 +59,7 @@ function HomePage() {
         </button>
         <button
           onClick={() => {
+            wrong_sound();
             setAnswer2("👎");
           }}
         >
@@ -55,6 +70,7 @@ function HomePage() {
       <div className="img-container">
         <button
           onClick={() => {
+            wrong_sound();
             setAnswer3("👎");
           }}
         >
@@ -62,6 +78,7 @@ function HomePage() {
         </button>
         <button
           onClick={() => {
+            correct_sound();
             setAnswer3("👍");
           }}
         >
@@ -72,6 +89,7 @@ function HomePage() {
       <div className="img-container">
         <button
           onClick={() => {
+            correct_sound();
             setAnswer4("👍");
           }}
         >
@@ -79,6 +97,7 @@ function HomePage() {
         </button>
         <button
           onClick={() => {
+            wrong_sound();
             setAnswer4("👎");
           }}
         >
