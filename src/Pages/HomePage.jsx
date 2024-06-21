@@ -30,7 +30,7 @@ function HomePage() {
         <h1>รูปทรงสองมิติและสามมิติ</h1>
       </header>
       <section>
-        <p>1) รูปไหนคือรูปทรงกลม</p>
+        <h2>1) รูปไหนคือรูปทรงกลม</h2>
         <div className="img-container">
           <button
             onClick={() => {
@@ -50,7 +50,7 @@ function HomePage() {
           </button>
           <p className="answer">{answer1}</p>
         </div>
-        <p>2) รูปไหนคือรูปสี่เหลี่ยมสองมิติ</p>
+        <h2>2) รูปไหนคือรูปสี่เหลี่ยมสองมิติ</h2>
         <div className="img-container">
           <button
             onClick={() => {
@@ -72,7 +72,7 @@ function HomePage() {
         </div>
       </section>
       <section>
-        <p>3) รูปไหนคือรูปทรงกล่องสี่เหลี่ยมผืนผ้า</p>
+        <h2>3) รูปไหนคือรูปทรงกล่องสี่เหลี่ยมผืนผ้า</h2>
         <div className="img-container">
           <button
             onClick={() => {
@@ -92,7 +92,7 @@ function HomePage() {
           </button>
           <p className="answer">{answer3}</p>
         </div>
-        <p>4) รูปไหนคือรูปทรงกรวย</p>
+        <h2>4) รูปไหนคือรูปทรงกรวย</h2>
         <div className="img-container">
           <button
             onClick={() => {
