@@ -27,84 +27,92 @@ function HomePage() {
   return (
     <>
       <header className="title">
-        <h1>รูปภาพไหนคือภาพสามมิติ</h1>
+        <h1>รูปทรงสองมิติและสามมิติ</h1>
       </header>
-      <div className="img-container">
-        <button
-          onClick={() => {
-            wrong_sound();
-            setAnswer1("👎");
-          }}
-        >
-          <img src={circle_shape} width={300} height={300} />
-        </button>
-        <button
-          onClick={() => {
-            correct_sound();
-            setAnswer1("👍");
-          }}
-        >
-          <img src={circle_form} width={300} height={300} />
-        </button>
-        <h2 className="answer">{answer1}</h2>
-      </div>
-      <div className="img-container">
-        <button
-          onClick={() => {
-            correct_sound();
-            setAnswer2("👍");
-          }}
-        >
-          <img src={square_form} width={300} height={300} />
-        </button>
-        <button
-          onClick={() => {
-            wrong_sound();
-            setAnswer2("👎");
-          }}
-        >
-          <img src={square_shape} width={300} height={300} />
-        </button>
-        <h2 className="answer">{answer2}</h2>
-      </div>
-      <div className="img-container">
-        <button
-          onClick={() => {
-            wrong_sound();
-            setAnswer3("👎");
-          }}
-        >
-          <img src={rectangle_shape} width={300} height={300} />
-        </button>
-        <button
-          onClick={() => {
-            correct_sound();
-            setAnswer3("👍");
-          }}
-        >
-          <img src={rectangle_form} width={300} height={300} />
-        </button>
-        <h2 className="answer">{answer3}</h2>
-      </div>
-      <div className="img-container">
-        <button
-          onClick={() => {
-            correct_sound();
-            setAnswer4("👍");
-          }}
-        >
-          <img src={triangle_form} width={300} height={300} />
-        </button>
-        <button
-          onClick={() => {
-            wrong_sound();
-            setAnswer4("👎");
-          }}
-        >
-          <img src={triangle_shape} width={300} height={300} />
-        </button>
-        <h2 className="answer">{answer4}</h2>
-      </div>
+      <section>
+        <p>1) รูปไหนคือรูปทรงกลม</p>
+        <div className="img-container">
+          <button
+            onClick={() => {
+              wrong_sound();
+              setAnswer1("👎");
+            }}
+          >
+            <img src={circle_shape} width={300} height={300} />
+          </button>
+          <button
+            onClick={() => {
+              correct_sound();
+              setAnswer1("👍");
+            }}
+          >
+            <img src={circle_form} />
+          </button>
+          <p className="answer">{answer1}</p>
+        </div>
+        <p>2) รูปไหนคือรูปสี่เหลี่ยมสองมิติ</p>
+        <div className="img-container">
+          <button
+            onClick={() => {
+              wrong_sound();
+              setAnswer2("👎");
+            }}
+          >
+            <img src={square_form} />
+          </button>
+          <button
+            onClick={() => {
+              correct_sound();
+              setAnswer2("👍");
+            }}
+          >
+            <img src={square_shape} />
+          </button>
+          <p className="answer">{answer2}</p>
+        </div>
+      </section>
+      <section>
+        <p>3) รูปไหนคือรูปทรงกล่องสี่เหลี่ยมผืนผ้า</p>
+        <div className="img-container">
+          <button
+            onClick={() => {
+              wrong_sound();
+              setAnswer3("👎");
+            }}
+          >
+            <img src={rectangle_shape} />
+          </button>
+          <button
+            onClick={() => {
+              correct_sound();
+              setAnswer3("👍");
+            }}
+          >
+            <img src={rectangle_form} />
+          </button>
+          <p className="answer">{answer3}</p>
+        </div>
+        <p>4) รูปไหนคือรูปทรงกรวย</p>
+        <div className="img-container">
+          <button
+            onClick={() => {
+              correct_sound();
+              setAnswer4("👍");
+            }}
+          >
+            <img src={triangle_form} />
+          </button>
+          <button
+            onClick={() => {
+              wrong_sound();
+              setAnswer4("👎");
+            }}
+          >
+            <img src={triangle_shape} />
+          </button>
+          <p className="answer">{answer4}</p>
+        </div>
+      </section>
     </>
   );
 }
